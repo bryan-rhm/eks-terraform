@@ -1,10 +1,16 @@
-# terraform-clients [wip]
+# Terraform AWS EKS
 
 This project setups an EKS cluster with one managed node group and the following charts:
 - Cluster Autoscaler
 - Metrics Server
 - External DNS
+- Grafana
+- Prometheus
+- Influxdb
+- fluent-bit
 - AWS Load Balancer Controller
+
+Additionally configures an OIDC provider for Github and a pipeline role to be assumed by github actions.
 
 ### Requirements:
 - terraform cli installed >= 1.0.6
