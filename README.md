@@ -10,7 +10,7 @@ This project setups an EKS cluster with one managed node group and the following
 - fluent-bit
 - AWS Load Balancer Controller
 
-For monitoring and logging this project uses a combination of `fluent-bit`, `influxdb` and `prometheus` and in order to visualize the data we have `grafana` on top of that.
+For monitoring and logging this project uses a combination of `fluent-bit`, `influxdb`, `prometheus` and in order to visualize the data we have `grafana` on top of that.
 
 Additionally configures an OIDC provider for Github and a pipeline role to be assumed by github actions.
 
