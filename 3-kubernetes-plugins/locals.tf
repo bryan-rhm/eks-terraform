@@ -11,7 +11,7 @@ locals {
 
   map_roles = [
     {
-      role_arn = local.infrastructure.pipeline_role_arn
+      role_arn = "arn:aws:iam::${data.aws_caller_identity.current.account_id}:role/PipelineRole"
       username = "pipelineUser:{{SessionName}}"
       group    = "PowerUserGroup"
     }

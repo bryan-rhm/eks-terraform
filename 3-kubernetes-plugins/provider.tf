@@ -4,7 +4,8 @@ provider "aws" {
     tags = local.default_tags
   }
 }
-  
+
+data "aws_caller_identity" "current" {}
 
 ### Authentication toke required for kubernetes and helm providers
 
