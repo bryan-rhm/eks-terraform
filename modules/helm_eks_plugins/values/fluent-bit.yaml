@@ -1,0 +1,7 @@
+backend:
+  type: influx
+  influx:
+    host: influxdb
+    port: 8086
+    database: fluentbit
+    sequence_tag: _seq

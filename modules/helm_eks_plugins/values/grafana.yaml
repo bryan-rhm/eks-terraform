@@ -1,0 +1,20 @@
+datasources:
+ datasources.yaml:
+   apiVersion: 1
+   datasources:
+   - name: Prometheus
+     type: prometheus
+     url: http://prometheus-server
+     access: proxy
+     isDefault: true
+   - name: influxdb
+     type: influxdb
+     access: proxy
+     orgId: 1
+     url: http://influxdb:8086/
+     user: admin
+     password: "password"
+     database: "fluentbit"
+     basicAuth: false
+     isDefault: false
+     readonly: false

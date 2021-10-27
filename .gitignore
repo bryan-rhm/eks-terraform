@@ -1,0 +1,10 @@
+
+**/.terraform/**
+**/.tfstate
+**/modules.json
+.DS_Store
+
+.terraform
+terraform.tfstate
+terraform.tfstate.d
+.terraform.lock.hcl
